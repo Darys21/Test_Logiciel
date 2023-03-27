@@ -1,0 +1,32 @@
+++++++++++++++++++++++++++++++++++++++++RAPPORT DE TEST +++++++++++++++++++++++++++++++++++++++++++++++
+
+
+-TestAPIController.js:
+                        Le test testAPIController.js est un ensemble de tests unitaires pour tester les différentes fonctions de l'APIController dans notre application.
+
+La méthode before est utilisée pour attendre que l'APIController récupère les genres à partir de l'API Spotify avant que les tests ne soient exécutés.
+
+La méthode describe est utilisée pour organiser les tests en sections en fonction de la méthode de l'APIController à tester.
+
+Dans chaque section, une méthode it est utilisée pour tester une fonctionnalité particulière de la méthode correspondante. Le code assert est utilisé pour vérifier que les résultats retournés sont conformes aux attentes.
+
+Le test global passe lorsque toutes les assertions des tests individuels sont vraies. Si une assertion échoue, le test échoue et renvoie un message d'erreur.
+
+
+-TestUIcontroller.js:
+                        le tests unitaires écrits en JavaScript pour tester les méthodes du contrôleur d'interface utilisateur (UIController). Les tests utilisent la bibliothèque d'assertions Node.js pour vérifier si les résultats des méthodes sont conformes aux attentes.
+
+Chaque test se concentre sur une méthode spécifique du contrôleur d'interface utilisateur. Les tests simulent des interactions utilisateur en créant des éléments HTML et en les manipulant à l'aide des méthodes du contrôleur d'interface utilisateur. Ensuite, les tests vérifient si les résultats obtenus sont conformes aux attentes en utilisant des assertions.
+
+Plus précisément, les tests vérifient si les méthodes inputField, createGenre, createPlaylist, createTrack, createTrackDetail, resetTrackDetail, resetTracks et resetPlaylist fonctionnent comme prévu. Ces méthodes sont toutes liées à la création et à la réinitialisation d'éléments HTML dans l'interface utilisateur.
+
+ Ces tests garantissent que le contrôleur d'interface utilisateur fonctionne correctement en créant et en manipulant des éléments HTML dans l'interface utilisateur. Cela permet de s'assurer que l'application fonctionne correctement et que l'interface utilisateur est cohérente et fonctionnelle.
+
+
+ TestAPPController.js:
+                        Le test  ci-dessus  teste la méthode init() de APPController. Le test consiste à vérifier si cette méthode appelle correctement les fonctions loadGenres() et storeToken(), et affiche le message "App is starting" dans la console.
+
+Pour effectuer ce test, on crée une instance de DOM pour les tests en utilisant JSDOM, puis on crée des instances des contrôleurs UIController et APIController. Ensuite, on appelle la méthode init() de APPController.
+
+On utilise ensuite assert pour vérifier si les fonctions getToken(), storeToken(), getGenres() et createGenre() ont été appelées une fois chacune. On vérifie également si console.log() a été appelé une fois avec le message "App is starting".
+

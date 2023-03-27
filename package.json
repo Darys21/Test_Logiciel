@@ -1,0 +1,21 @@
+{
+  "name": "daryso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "jsdom": "^21.1.1",
+    "mocha": "^10.2.0",
+    "node-fetch": "^3.3.1"
+  }
+}
